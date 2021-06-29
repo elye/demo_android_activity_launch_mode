@@ -2,17 +2,22 @@ package com.example.launchmodeexperiment
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.example.launchmodeexperiment.databinding.ActivityAllBinding
 
-open class BasedActivity : AppCompatActivity() {
+open class BasedActivity(private val activityName: String) : AppCompatActivity() {
+
     private lateinit var binding: ActivityAllBinding
+    private val tracking = "Tracking"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityAllBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
+
+        Log.d(tracking, "OnCreate: $activityName")
 
         binding.buttonA.setOnClickListener {
             startActivity(Intent(this, AStandardActivity::class.java))
@@ -93,5 +98,10 @@ open class BasedActivity : AppCompatActivity() {
         binding.buttonSinstanceE.setOnClickListener {
             startActivity(Intent(this, ESingleInstanceActivity::class.java))
         }
+    }
+
+    override fun onNewIntent(intent: Intent?) {
+        super.onNewIntent(intent)
+        Log.d("Tracking", "OnNewIntent: $activityName")
     }
 }
