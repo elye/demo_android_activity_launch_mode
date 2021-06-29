@@ -1,0 +1,2 @@
+rootProject.name = "Launch Mode Experiment"
+include ':app'

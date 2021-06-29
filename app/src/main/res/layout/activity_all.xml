@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AStandardActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_a"
+        android:text="Standard A"
+        app:layout_constraintBottom_toTopOf="@+id/button_b"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/button_stop_a"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Standard B"
+        app:layout_constraintBottom_toTopOf="@+id/button_c"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/button_stop_b"
+        app:layout_constraintTop_toBottomOf="@+id/button_a" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Standard C"
+        app:layout_constraintBottom_toTopOf="@+id/button_d"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/button_stop_c"
+        app:layout_constraintTop_toBottomOf="@+id/button_b" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Standard D"
+        app:layout_constraintBottom_toTopOf="@+id/button_e"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/button_stop_d"
+        app:layout_constraintTop_toBottomOf="@+id/button_c" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Standard E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/button_stop_e"
+        app:layout_constraintTop_toBottomOf="@+id/button_d" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_stop_a"
+        android:text="S. top A"
+        app:layout_constraintBottom_toTopOf="@+id/button_stop_b"
+        app:layout_constraintLeft_toRightOf="@id/button_a"
+        app:layout_constraintRight_toLeftOf="@id/button_stask_a"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_stop_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="S. top B"
+        app:layout_constraintBottom_toTopOf="@+id/button_stop_c"
+        app:layout_constraintLeft_toRightOf="@id/button_b"
+        app:layout_constraintRight_toLeftOf="@id/button_stask_b"
+        app:layout_constraintTop_toBottomOf="@+id/button_stop_a" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_stop_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="S. top C"
+        app:layout_constraintBottom_toTopOf="@+id/button_stop_d"
+        app:layout_constraintLeft_toRightOf="@id/button_c"
+        app:layout_constraintRight_toLeftOf="@id/button_stask_c"
+        app:layout_constraintTop_toBottomOf="@+id/button_stop_b" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_stop_d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="S. top D"
+        app:layout_constraintBottom_toTopOf="@+id/button_stop_e"
+        app:layout_constraintLeft_toRightOf="@id/button_d"
+        app:layout_constraintRight_toLeftOf="@id/button_stask_d"
+        app:layout_constraintTop_toBottomOf="@+id/button_stop_c" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_stop_e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="S. top E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/button_e"
+        app:layout_constraintRight_toLeftOf="@id/button_stask_e"
+        app:layout_constraintTop_toBottomOf="@+id/button_stop_d" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_stask_a"
+        android:text="S. task A"
+        app:layout_constraintBottom_toTopOf="@+id/button_stask_b"
+        app:layout_constraintLeft_toRightOf="@id/button_stop_a"
+        app:layout_constraintRight_toLeftOf="@id/button_sinstance_a"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_stask_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="S. task B"
+        app:layout_constraintBottom_toTopOf="@+id/button_stask_c"
+        app:layout_constraintLeft_toRightOf="@id/button_stop_b"
+        app:layout_constraintRight_toLeftOf="@id/button_sinstance_b"
+        app:layout_constraintTop_toBottomOf="@+id/button_stask_a" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_stask_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="S. task C"
+        app:layout_constraintBottom_toTopOf="@+id/button_stask_d"
+        app:layout_constraintLeft_toRightOf="@id/button_stop_c"
+        app:layout_constraintRight_toLeftOf="@id/button_sinstance_c"
+        app:layout_constraintTop_toBottomOf="@+id/button_stask_b" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_stask_d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="S. task D"
+        app:layout_constraintBottom_toTopOf="@+id/button_stask_e"
+        app:layout_constraintLeft_toRightOf="@id/button_stop_d"
+        app:layout_constraintRight_toLeftOf="@id/button_sinstance_d"
+        app:layout_constraintTop_toBottomOf="@+id/button_stask_c" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_stask_e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="S. task E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/button_stop_e"
+        app:layout_constraintRight_toLeftOf="@id/button_sinstance_e"
+        app:layout_constraintTop_toBottomOf="@+id/button_stask_d" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_sinstance_a"
+        android:text="S. instance A"
+        app:layout_constraintBottom_toTopOf="@+id/button_sinstance_b"
+        app:layout_constraintLeft_toRightOf="@id/button_stask_a"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_sinstance_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="S. instance B"
+        app:layout_constraintBottom_toTopOf="@+id/button_sinstance_c"
+        app:layout_constraintLeft_toRightOf="@id/button_stask_b"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_sinstance_a" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_sinstance_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="S. instance C"
+        app:layout_constraintBottom_toTopOf="@+id/button_sinstance_d"
+        app:layout_constraintLeft_toRightOf="@id/button_stask_c"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_sinstance_b" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_sinstance_d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="S. instance D"
+        app:layout_constraintBottom_toTopOf="@+id/button_sinstance_e"
+        app:layout_constraintLeft_toRightOf="@id/button_stask_d"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_sinstance_c" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_sinstance_e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="S. instance E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/button_stask_e"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_sinstance_d" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

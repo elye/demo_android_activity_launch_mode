@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.launchmodeexperiment">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LaunchModeExperiment">
+        <activity android:name=".EStandardActivity"
+            android:launchMode="standard"
+            android:label="Standard E" />
+        <activity android:name=".DStandardActivity"
+            android:launchMode="standard"
+            android:label="Standard D" />
+        <activity android:name=".CStandardActivity"
+            android:launchMode="standard"
+            android:label="Standard C" />
+        <activity android:name=".BStandardActivity"
+            android:launchMode="standard"
+            android:label="Standard B" />
+        <activity android:name=".ASingleTopActivity"
+            android:launchMode="singleTop"
+            android:label="Single Top A">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AStandardActivity"
+            android:launchMode="standard"
+            android:label="Standard A">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ASingleTaskActivity"
+            android:launchMode="singleTask"
+            android:label="Single Task A">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ASingleInstanceActivity"
+            android:launchMode="singleInstance"
+            android:label="Single Instance A">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ESingleTopActivity"
+            android:launchMode="singleTop"
+            android:label="Single Top E" />
+        <activity android:name=".DSingleTopActivity"
+            android:launchMode="singleTop"
+            android:label="Single Top D" />
+        <activity android:name=".CSingleTopActivity"
+            android:launchMode="singleTop"
+            android:label="Single Top C" />
+        <activity android:name=".BSingleTopActivity"
+            android:launchMode="singleTop"
+            android:label="Single Top B" />
+        <activity android:name=".ESingleTaskActivity"
+            android:launchMode="singleTask"
+            android:label="Single Task E" />
+        <activity android:name=".DSingleTaskActivity"
+            android:launchMode="singleTask"
+            android:label="Single Task D" />
+        <activity android:name=".CSingleTaskActivity"
+            android:launchMode="singleTask"
+            android:label="Single Task C" />
+        <activity android:name=".BSingleTaskActivity"
+            android:launchMode="singleTask"
+            android:label="Single Task B" />
+        <activity android:name=".ESingleInstanceActivity"
+            android:launchMode="singleInstance"
+            android:label="Single Instance E" />
+        <activity android:name=".DSingleInstanceActivity"
+            android:launchMode="singleTask"
+            android:label="Single Instance D" />
+        <activity android:name=".CSingleInstanceActivity"
+            android:launchMode="singleInstance"
+            android:label="Single Instance C" />
+        <activity android:name=".BSingleInstanceActivity"
+            android:launchMode="singleInstance"
+            android:label="Single Instance B" />
+    </application>
+
+</manifest>
